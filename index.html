@@ -413,7 +413,7 @@ const btn=document.getElementById('submitBtn');
 btn.textContent='Đang gửi...';btn.disabled=true;
 const fd=new FormData(e.target);
 const data=Object.fromEntries(fd);
-const SHEET_URL='https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec';
+const SHEET_URL='https://script.google.com/macros/s/AKfycbyw1RIQsMJiBltDsxuk19UC8ns6qidITvS_Q-s-D-RdAOvln3iiDiBEIiUuwaOvlD-2Vg/exec';
 fetch(SHEET_URL,{method:'POST',mode:'no-cors',headers:{'Content-Type':'application/json'},body:JSON.stringify(data)})
 .then(()=>{
 document.getElementById('bookingForm').style.display='none';
