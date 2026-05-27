@@ -1,428 +1,622 @@
 <!DOCTYPE html>
 <html lang="vi">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>Sand Hotel Cát Bà - Nghỉ Dưỡng Bên Biển</title>
-<meta name="description" content="Sand Hotel Cát Bà - Không gian nghỉ dưỡng hiện đại, gần biển, tận hưởng kỳ nghỉ thư giãn giữa thiên nhiên tuyệt đẹp của đảo Cát Bà.">
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Sand Hotel Cát Bà - Nghỉ Dưỡng Bên Biển</title>
+    <meta name="description"
+        content="Sand Hotel Cát Bà - Không gian nghỉ dưỡng hiện đại, gần biển, tận hưởng kỳ nghỉ thư giãn giữa thiên nhiên tuyệt đẹp của đảo Cát Bà.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
+
 <body>
 
-<!-- NAVBAR -->
-<nav class="navbar" id="navbar">
-<a href="#" class="nav-logo">SAND <span>HOTEL</span></a>
-<ul class="nav-links" id="navLinks">
-<li><a href="#gioi-thieu">Giới thiệu</a></li>
-<li><a href="#thong-tin">Thông tin</a></li>
-<li><a href="#hang-phong">Hạng phòng</a></li>
-<li><a href="#danh-gia">Đánh giá</a></li>
-<li><a href="#profile">Profile</a></li>
-<li><a href="#dat-phong" class="nav-cta">Đặt lịch ngay</a></li>
-</ul>
-<div class="menu-toggle" id="menuToggle" onclick="document.getElementById('navLinks').classList.toggle('active')">
-<span></span><span></span><span></span>
-</div>
-</nav>
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+        <a href="#" class="nav-logo">SAND <span>HOTEL</span></a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#gioi-thieu">Giới thiệu</a></li>
+            <li><a href="#thong-tin">Thông tin</a></li>
+            <li><a href="#hang-phong">Hạng phòng</a></li>
+            <li><a href="#danh-gia">Đánh giá</a></li>
+            <li><a href="#profile">Profile</a></li>
+            <li><a href="#dat-phong" class="nav-cta">Đặt lịch ngay</a></li>
+        </ul>
+        <div class="menu-toggle" id="menuToggle"
+            onclick="document.getElementById('navLinks').classList.toggle('active')">
+            <span></span><span></span><span></span>
+        </div>
+    </nav>
 
-<!-- HERO -->
-<section class="hero" id="hero">
-<div class="hero-bg"></div>
-<div class="hero-overlay"></div>
-<canvas id="particles-canvas"></canvas>
-<div class="hero-content">
-<div class="hero-badge">✦ Your Perfect Getaway by the Sea ✦</div>
-<h1>Sand Hotel <span class="gold">Cát Bà</span></h1>
-<p class="hero-subtitle">Không gian nghỉ dưỡng hiện đại, gần biển, tận hưởng kỳ nghỉ thư giãn giữa thiên nhiên tuyệt đẹp của đảo Cát Bà.</p>
-<div class="hero-btns">
-<a href="#dat-phong" class="btn-primary">Đặt Phòng Ngay</a>
-<a href="#gioi-thieu" class="btn-outline">Khám Phá</a>
-</div>
-</div>
-<a href="#uu-dai" class="hero-scroll">SCROLL<i class="fas fa-chevron-down"></i></a>
-</section>
-<hr class="golden-divider">
+    <!-- HERO -->
+    <section class="hero" id="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-overlay"></div>
+        <canvas id="particles-canvas"></canvas>
+        <div class="hero-content">
+            <div class="hero-badge">✦ Your Perfect Getaway by the Sea ✦</div>
+            <h1>Sand Hotel <span class="gold">Cát Bà</span></h1>
+            <p class="hero-subtitle">Không gian nghỉ dưỡng hiện đại, gần biển, tận hưởng kỳ nghỉ thư giãn giữa thiên
+                nhiên tuyệt đẹp của đảo Cát Bà.</p>
+            <div class="hero-btns">
+                <a href="#dat-phong" class="btn-primary">Đặt Phòng Ngay</a>
+                <a href="#gioi-thieu" class="btn-outline">Khám Phá</a>
+            </div>
+        </div>
+        <a href="#uu-dai" class="hero-scroll">SCROLL<i class="fas fa-chevron-down"></i></a>
+    </section>
+    <hr class="golden-divider">
 
-<!-- ƯU ĐÃI -->
-<section class="section promo-section" id="uu-dai">
-<div class="promo-grid">
-<div class="promo-img fade-left"><img src="image/Ảnh khu vực ưu đãi.png" alt="Ưu đãi">
-<div class="promo-badge-big">20%<small>GIẢM GIÁ</small></div></div>
-<div class="promo-text fade-right">
-<div class="section-badge">✦ Ưu Đãi Nổi Bật</div>
-<h2>Đặt Phòng Sớm – Giảm Ngay 20%</h2>
-<p>Tận hưởng kỳ nghỉ tuyệt vời tại Sand Hotel Cát Bà với mức giá ưu đãi đặc biệt khi đặt phòng trước.</p>
-<ul class="promo-features">
-<li><i class="fas fa-check-circle"></i>Miễn phí bữa sáng buffet mỗi ngày</li>
-<li><i class="fas fa-check-circle"></i>Hỗ trợ đặt xe & tour tham quan</li>
-<li><i class="fas fa-check-circle"></i>Free Wi-Fi toàn khách sạn</li>
-<li><i class="fas fa-check-circle"></i>Lễ tân hỗ trợ 24/7</li>
-</ul>
-<a href="#dat-phong" class="btn-primary">Nhận Ưu Đãi Ngay</a>
-</div>
-</div>
-</section>
-<hr class="golden-divider">
+    <!-- ƯU ĐÃI -->
+    <section class="section promo-section" id="uu-dai">
+        <div class="promo-grid">
+            <div class="promo-img fade-left"><img src="image/Ảnh khu vực ưu đãi.png" alt="Ưu đãi">
+                <div class="promo-badge-big">20%<small>GIẢM GIÁ</small></div>
+            </div>
+            <div class="promo-text fade-right">
+                <div class="section-badge">✦ Ưu Đãi Nổi Bật</div>
+                <h2>Đặt Phòng Sớm – Giảm Ngay 20%</h2>
+                <p>Tận hưởng kỳ nghỉ tuyệt vời tại Sand Hotel Cát Bà với mức giá ưu đãi đặc biệt khi đặt phòng trước.
+                </p>
+                <ul class="promo-features">
+                    <li><i class="fas fa-check-circle"></i>Miễn phí bữa sáng buffet mỗi ngày</li>
+                    <li><i class="fas fa-check-circle"></i>Hỗ trợ đặt xe & tour tham quan</li>
+                    <li><i class="fas fa-check-circle"></i>Free Wi-Fi toàn khách sạn</li>
+                    <li><i class="fas fa-check-circle"></i>Lễ tân hỗ trợ 24/7</li>
+                </ul>
+                <a href="#dat-phong" class="btn-primary">Nhận Ưu Đãi Ngay</a>
+            </div>
+        </div>
+    </section>
+    <hr class="golden-divider">
 
-<!-- GIỚI THIỆU -->
-<section class="section intro-section" id="gioi-thieu">
-<div class="intro-grid">
-<div class="intro-img fade-left"><div class="intro-img-accent"></div><img src="image/Giới thiệu.jpg" alt="Giới thiệu"></div>
-<div class="intro-text fade-right">
-<div class="section-badge">✦ Giới Thiệu</div>
-<h2>Sand Hotel Cát Bà</h2>
-<p>Không gian nghỉ dưỡng hiện đại, gần biển, tận hưởng kỳ nghỉ thư giãn giữa thiên nhiên tuyệt đẹp của đảo Cát Bà.</p>
-<p>Sand Hotel Cát Bà mang phong cách thiết kế hiện đại kết hợp hơi thở thiên nhiên biển đảo. Từng căn phòng được chăm chút với tông trắng – xanh nhẹ nhàng, mở ra khung cảnh biển thơ mộng và cảm giác thư thái tuyệt đối.</p>
-<div class="stats-row" style="margin-top:30px">
-<div class="stat-item"><div class="stat-num" style="color:var(--gold-dark)">500+</div><div class="stat-label" style="color:var(--text-light)">Khách hài lòng</div></div>
-<div class="stat-item"><div class="stat-num" style="color:var(--gold-dark)">4.8</div><div class="stat-label" style="color:var(--text-light)">Đánh giá sao</div></div>
-<div class="stat-item"><div class="stat-num" style="color:var(--gold-dark)">3+</div><div class="stat-label" style="color:var(--text-light)">Hạng phòng</div></div>
-</div>
-</div>
-</div>
-</section>
-<hr class="golden-divider">
+    <!-- GIỚI THIỆU -->
+    <section class="section intro-section" id="gioi-thieu">
+        <div class="intro-grid">
+            <div class="intro-img fade-left">
+                <div class="intro-img-accent"></div><img src="image/Giới thiệu.jpg" alt="Giới thiệu">
+            </div>
+            <div class="intro-text fade-right">
+                <div class="section-badge">✦ Giới Thiệu</div>
+                <h2>Sand Hotel Cát Bà</h2>
+                <p>Không gian nghỉ dưỡng hiện đại, gần biển, tận hưởng kỳ nghỉ thư giãn giữa thiên nhiên tuyệt đẹp của
+                    đảo Cát Bà.</p>
+                <p>Sand Hotel Cát Bà mang phong cách thiết kế hiện đại kết hợp hơi thở thiên nhiên biển đảo. Từng căn
+                    phòng được chăm chút với tông trắng – xanh nhẹ nhàng, mở ra khung cảnh biển thơ mộng và cảm giác thư
+                    thái tuyệt đối.</p>
+                <div class="stats-row" style="margin-top:30px">
+                    <div class="stat-item">
+                        <div class="stat-num" style="color:var(--gold-dark)">500+</div>
+                        <div class="stat-label" style="color:var(--text-light)">Khách hài lòng</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-num" style="color:var(--gold-dark)">4.8</div>
+                        <div class="stat-label" style="color:var(--text-light)">Đánh giá sao</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-num" style="color:var(--gold-dark)">3+</div>
+                        <div class="stat-label" style="color:var(--text-light)">Hạng phòng</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr class="golden-divider">
 
-<!-- THÔNG TIN -->
-<section class="section" id="thong-tin">
-<div class="section-header fade-in">
-<div class="section-badge">✦ Thông Tin</div>
-<h2>Không gian nghỉ dưỡng tinh tế bên bờ biển</h2>
-<p>Sand Hotel Cát Bà mang phong cách thiết kế hiện đại kết hợp hơi thở thiên nhiên biển đảo.</p>
-<div class="section-line"></div>
-</div>
-<div class="info-cards">
-<div class="info-card fade-in">
-<div class="info-card-img"><img src="image/Thông tin.jpg" alt="Kiến trúc"></div>
-<div class="info-card-body">
-<div class="info-card-icon"><i class="fas fa-building"></i></div>
-<h3>Kiến trúc sang trọng</h3>
-<p>Không gian mở hài hòa với thiên nhiên. Phong cách tinh tế & hiện đại, mang đến cảm giác ấm áp, sang trọng.</p>
-</div></div>
-<div class="info-card fade-in">
-<div class="info-card-img"><img src="image/Thông tin(1).jpg" alt="View"></div>
-<div class="info-card-body">
-<div class="info-card-icon"><i class="fas fa-mountain-sun"></i></div>
-<h3>View ngắm cảnh tuyệt đẹp</h3>
-<p>Hệ thống phòng nghỉ hướng biển, hướng núi, hướng phố cho bạn ngắm bình minh rực rỡ hay hoàng hôn lãng mạn.</p>
-</div></div>
-<div class="info-card fade-in">
-<div class="info-card-img"><img src="image/Thông tin(2).jpg" alt="Tiện nghi"></div>
-<div class="info-card-body">
-<div class="info-card-icon"><i class="fas fa-concierge-bell"></i></div>
-<h3>Tiện nghi cao cấp</h3>
-<p>Mỗi phòng đều được trang bị nội thất sang trọng cùng đầy đủ tiện ích giúp bạn tận hưởng kỳ nghỉ thoải mái nhất.</p>
-</div></div>
-</div>
-</section>
-<hr class="golden-divider">
+    <!-- THÔNG TIN -->
+    <section class="section" id="thong-tin">
+        <div class="section-header fade-in">
+            <div class="section-badge">✦ Thông Tin</div>
+            <h2>Không gian nghỉ dưỡng tinh tế bên bờ biển</h2>
+            <p>Sand Hotel Cát Bà mang phong cách thiết kế hiện đại kết hợp hơi thở thiên nhiên biển đảo.</p>
+            <div class="section-line"></div>
+        </div>
+        <div class="info-cards">
+            <div class="info-card fade-in">
+                <div class="info-card-img"><img src="image/Thông tin.jpg" alt="Kiến trúc"></div>
+                <div class="info-card-body">
+                    <div class="info-card-icon"><i class="fas fa-building"></i></div>
+                    <h3>Kiến trúc sang trọng</h3>
+                    <p>Không gian mở hài hòa với thiên nhiên. Phong cách tinh tế & hiện đại, mang đến cảm giác ấm áp,
+                        sang trọng.</p>
+                </div>
+            </div>
+            <div class="info-card fade-in">
+                <div class="info-card-img"><img src="image/Thông tin(1).jpg" alt="View"></div>
+                <div class="info-card-body">
+                    <div class="info-card-icon"><i class="fas fa-mountain-sun"></i></div>
+                    <h3>View ngắm cảnh tuyệt đẹp</h3>
+                    <p>Hệ thống phòng nghỉ hướng biển, hướng núi, hướng phố cho bạn ngắm bình minh rực rỡ hay hoàng hôn
+                        lãng mạn.</p>
+                </div>
+            </div>
+            <div class="info-card fade-in">
+                <div class="info-card-img"><img src="image/Thông tin(2).jpg" alt="Tiện nghi"></div>
+                <div class="info-card-body">
+                    <div class="info-card-icon"><i class="fas fa-concierge-bell"></i></div>
+                    <h3>Tiện nghi cao cấp</h3>
+                    <p>Mỗi phòng đều được trang bị nội thất sang trọng cùng đầy đủ tiện ích giúp bạn tận hưởng kỳ nghỉ
+                        thoải mái nhất.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr class="golden-divider">
 
-<!-- HẠNG PHÒNG -->
-<section class="section rooms-section" id="hang-phong">
-<div class="section-header fade-in">
-<div class="section-badge">✦ Hạng Phòng</div>
-<h2>Hệ thống phòng nghỉ đa dạng</h2>
-<p>Từ phòng tiêu chuẩn ấm cúng đến các hạng phòng cao cấp, mỗi không gian đều mang đến sự thoải mái và trải nghiệm trọn vẹn.</p>
-<div class="section-line"></div>
-</div>
-<div class="rooms-grid">
-<div class="room-card fade-in">
-<div class="room-card-img"><img src="image/Phòng đơn tiêu chuẩn.jpg" alt="Phòng đơn"><div class="room-badge">Tiêu Chuẩn</div></div>
-<div class="room-card-body">
-<h3>Phòng Đơn Tiêu Chuẩn</h3>
-<div class="room-specs">
-<span class="room-spec"><i class="fas fa-bed"></i>Giường 1m8</span>
-<span class="room-spec"><i class="fas fa-ruler-combined"></i>20-22m²</span>
-<span class="room-spec"><i class="fas fa-mountain"></i>Núi/Thị trấn</span>
-</div>
-<div class="room-amenities">
-<div class="room-amenity" title="Wi-Fi"><i class="fas fa-wifi"></i></div>
-<div class="room-amenity" title="TV"><i class="fas fa-tv"></i></div>
-<div class="room-amenity" title="Điều hòa"><i class="fas fa-snowflake"></i></div>
-<div class="room-amenity" title="Minibar"><i class="fas fa-glass-water"></i></div>
-<div class="room-amenity" title="Bàn làm việc"><i class="fas fa-desktop"></i></div>
-<div class="room-amenity" title="Ấm nước"><i class="fas fa-mug-hot"></i></div>
-</div>
-</div></div>
-<div class="room-card fade-in">
-<div class="room-card-img"><img src="image/Phòng đôi tiêu chuẩn.jpg" alt="Phòng đôi"><div class="room-badge">Tiêu Chuẩn</div></div>
-<div class="room-card-body">
-<h3>Phòng Đôi Tiêu Chuẩn</h3>
-<div class="room-specs">
-<span class="room-spec"><i class="fas fa-bed"></i>2 giường 1m6</span>
-<span class="room-spec"><i class="fas fa-ruler-combined"></i>23-25m²</span>
-<span class="room-spec"><i class="fas fa-mountain"></i>Núi/Thị trấn</span>
-</div>
-<div class="room-amenities">
-<div class="room-amenity" title="Wi-Fi"><i class="fas fa-wifi"></i></div>
-<div class="room-amenity" title="TV"><i class="fas fa-tv"></i></div>
-<div class="room-amenity" title="Điều hòa"><i class="fas fa-snowflake"></i></div>
-<div class="room-amenity" title="Minibar"><i class="fas fa-glass-water"></i></div>
-<div class="room-amenity" title="Bàn làm việc"><i class="fas fa-desktop"></i></div>
-<div class="room-amenity" title="Ấm nước"><i class="fas fa-mug-hot"></i></div>
-</div>
-</div></div>
-<div class="room-card fade-in">
-<div class="room-card-img"><img src="image/Phòng đôi VIP.jpg" alt="Phòng VIP"><div class="room-badge" style="background:linear-gradient(135deg,#e74c3c,#c0392b);color:#fff">VIP</div></div>
-<div class="room-card-body">
-<h3>Phòng Đôi VIP</h3>
-<div class="room-specs">
-<span class="room-spec"><i class="fas fa-bed"></i>2 giường 1m6</span>
-<span class="room-spec"><i class="fas fa-ruler-combined"></i>27m²</span>
-<span class="room-spec"><i class="fas fa-bath"></i>Có bồn tắm</span>
-</div>
-<div class="room-amenities">
-<div class="room-amenity" title="Wi-Fi"><i class="fas fa-wifi"></i></div>
-<div class="room-amenity" title="TV"><i class="fas fa-tv"></i></div>
-<div class="room-amenity" title="Điều hòa"><i class="fas fa-snowflake"></i></div>
-<div class="room-amenity" title="Minibar"><i class="fas fa-glass-water"></i></div>
-<div class="room-amenity" title="Bồn tắm"><i class="fas fa-bath"></i></div>
-<div class="room-amenity" title="Ấm nước"><i class="fas fa-mug-hot"></i></div>
-</div>
-</div></div>
-</div>
-</section>
-<hr class="golden-divider">
+    <!-- HẠNG PHÒNG -->
+    <section class="section rooms-section" id="hang-phong">
+        <div class="section-header fade-in">
+            <div class="section-badge">✦ Hạng Phòng</div>
+            <h2>Hệ thống phòng nghỉ đa dạng</h2>
+            <p>Từ phòng tiêu chuẩn ấm cúng đến các hạng phòng cao cấp, mỗi không gian đều mang đến sự thoải mái và trải
+                nghiệm trọn vẹn.</p>
+            <div class="section-line"></div>
+        </div>
+        <div class="rooms-grid">
+            <div class="room-card fade-in">
+                <div class="room-card-img"><img src="image/Phòng đơn tiêu chuẩn.jpg" alt="Phòng đơn">
+                    <div class="room-badge">Tiêu Chuẩn</div>
+                </div>
+                <div class="room-card-body">
+                    <h3>Phòng Đơn Tiêu Chuẩn</h3>
+                    <div class="room-specs">
+                        <span class="room-spec"><i class="fas fa-bed"></i>Giường 1m8</span>
+                        <span class="room-spec"><i class="fas fa-ruler-combined"></i>20-22m²</span>
+                        <span class="room-spec"><i class="fas fa-mountain"></i>Núi/Thị trấn</span>
+                    </div>
+                    <div class="room-amenities">
+                        <div class="room-amenity" title="Wi-Fi"><i class="fas fa-wifi"></i></div>
+                        <div class="room-amenity" title="TV"><i class="fas fa-tv"></i></div>
+                        <div class="room-amenity" title="Điều hòa"><i class="fas fa-snowflake"></i></div>
+                        <div class="room-amenity" title="Minibar"><i class="fas fa-glass-water"></i></div>
+                        <div class="room-amenity" title="Bàn làm việc"><i class="fas fa-desktop"></i></div>
+                        <div class="room-amenity" title="Ấm nước"><i class="fas fa-mug-hot"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="room-card fade-in">
+                <div class="room-card-img"><img src="image/Phòng đôi tiêu chuẩn.jpg" alt="Phòng đôi">
+                    <div class="room-badge">Tiêu Chuẩn</div>
+                </div>
+                <div class="room-card-body">
+                    <h3>Phòng Đôi Tiêu Chuẩn</h3>
+                    <div class="room-specs">
+                        <span class="room-spec"><i class="fas fa-bed"></i>2 giường 1m6</span>
+                        <span class="room-spec"><i class="fas fa-ruler-combined"></i>23-25m²</span>
+                        <span class="room-spec"><i class="fas fa-mountain"></i>Núi/Thị trấn</span>
+                    </div>
+                    <div class="room-amenities">
+                        <div class="room-amenity" title="Wi-Fi"><i class="fas fa-wifi"></i></div>
+                        <div class="room-amenity" title="TV"><i class="fas fa-tv"></i></div>
+                        <div class="room-amenity" title="Điều hòa"><i class="fas fa-snowflake"></i></div>
+                        <div class="room-amenity" title="Minibar"><i class="fas fa-glass-water"></i></div>
+                        <div class="room-amenity" title="Bàn làm việc"><i class="fas fa-desktop"></i></div>
+                        <div class="room-amenity" title="Ấm nước"><i class="fas fa-mug-hot"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="room-card fade-in">
+                <div class="room-card-img"><img src="image/Phòng đôi VIP.jpg" alt="Phòng VIP">
+                    <div class="room-badge" style="background:linear-gradient(135deg,#e74c3c,#c0392b);color:#fff">VIP
+                    </div>
+                </div>
+                <div class="room-card-body">
+                    <h3>Phòng Đôi VIP</h3>
+                    <div class="room-specs">
+                        <span class="room-spec"><i class="fas fa-bed"></i>2 giường 1m6</span>
+                        <span class="room-spec"><i class="fas fa-ruler-combined"></i>27m²</span>
+                        <span class="room-spec"><i class="fas fa-bath"></i>Có bồn tắm</span>
+                    </div>
+                    <div class="room-amenities">
+                        <div class="room-amenity" title="Wi-Fi"><i class="fas fa-wifi"></i></div>
+                        <div class="room-amenity" title="TV"><i class="fas fa-tv"></i></div>
+                        <div class="room-amenity" title="Điều hòa"><i class="fas fa-snowflake"></i></div>
+                        <div class="room-amenity" title="Minibar"><i class="fas fa-glass-water"></i></div>
+                        <div class="room-amenity" title="Bồn tắm"><i class="fas fa-bath"></i></div>
+                        <div class="room-amenity" title="Ấm nước"><i class="fas fa-mug-hot"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<!-- ĐÁNH GIÁ -->
-<section class="section" id="danh-gia">
-<div class="section-header fade-in">
-<div class="section-badge">✦ Đánh Giá</div>
-<h2>Khách hàng nói gì về chúng tôi</h2>
-<p>Những phản hồi chân thực từ du khách đã trải nghiệm tại Sand Hotel Cát Bà.</p>
-<div class="section-line"></div>
-</div>
-<div class="reviews-grid">
-<div class="review-card fade-in">
-<div class="review-stars">★★★★★</div>
-<p class="review-text">"Khách sạn rất đẹp, phòng sạch sẽ và hiện đại. Nhân viên thân thiện, nhiệt tình. View núi từ phòng rất đẹp. Buffet sáng ngon và đa dạng. Sẽ quay lại lần sau!"</p>
-<div class="review-author"><div class="review-avatar">T</div><div><div class="review-name">Trần Minh Tuấn</div><div class="review-source"><i class="fab fa-google"></i> Google Maps</div></div></div>
-</div>
-<div class="review-card fade-in">
-<div class="review-stars">★★★★★</div>
-<p class="review-text">"Vị trí tuyệt vời, gần biển và trung tâm. Phòng rộng rãi, sạch sẽ. Đặc biệt hồ bơi trên tầng thượng view cực đẹp. Giá cả rất hợp lý so với chất lượng."</p>
-<div class="review-author"><div class="review-avatar">H</div><div><div class="review-name">Hoàng Thu Hà</div><div class="review-source"><i class="fab fa-google"></i> Google Maps</div></div></div>
-</div>
-<div class="review-card fade-in">
-<div class="review-stars">★★★★★</div>
-<p class="review-text">"Lần đầu đến Cát Bà và chọn Sand Hotel là quyết định đúng đắn. Phòng đẹp, tiện nghi đầy đủ, lễ tân hỗ trợ đặt tour rất nhiệt tình. Highly recommend!"</p>
-<div class="review-author"><div class="review-avatar">L</div><div><div class="review-name">Lê Văn Đức</div><div class="review-source"><i class="fab fa-google"></i> Google Maps</div></div></div>
-</div>
-</div>
-</section>
-<hr class="golden-divider">
+    <!-- TRÌNH XEM CHI TIẾT HẠNG PHÒNG (MODAL) -->
+    <div id="roomModal" class="room-modal" onclick="if(event.target === this) closeRoomModal()">
+        <div class="room-modal-content">
+            <span class="room-modal-close" onclick="closeRoomModal()">&times;</span>
+            <div class="room-modal-body">
+                <div class="room-modal-image">
+                    <img id="roomModalImg" src="" alt="Room">
+                </div>
+                <div class="room-modal-info">
+                    <div id="roomModalBadgeContainer" style="margin-bottom: 15px; display: inline-block;"></div>
+                    <h3 id="roomModalTitle">Title</h3>
+                    <div class="room-specs" id="roomModalSpecs" style="margin-bottom: 20px;"></div>
+                    <hr class="golden-divider" style="margin: 20px 0; width: 100%; height: 2px;">
+                    <p style="color: var(--text-light); margin-bottom: 25px; line-height: 1.8;">Tận hưởng không gian nghỉ dưỡng tuyệt vời với thiết kế tinh tế, mang lại cảm giác thư thái và trọn vẹn nhất cho kỳ nghỉ của bạn tại Sand Hotel Cát Bà.</p>
+                    <div class="room-amenities" id="roomModalAmenities" style="border:none; padding-top:0;"></div>
+                    <a href="#dat-phong" class="btn-primary" style="display:inline-block; margin-top:30px" onclick="closeRoomModal()">Đặt Phòng Ngay</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
-<!-- TIỆN ÍCH -->
-<section class="section amenities-section" id="tien-ich">
-<div class="section-header fade-in">
-<div class="section-badge" style="color:var(--gold-light)">✦ Tiện Ích</div>
-<h2>Tiện nghi & Dịch vụ</h2>
-<p>Đầy đủ tiện ích cao cấp phục vụ kỳ nghỉ của bạn.</p>
-<div class="section-line"></div>
-</div>
-<div class="amenities-grid">
-<div class="amenity-item fade-in"><div class="amenity-icon"><i class="fas fa-swimming-pool"></i></div><h4>Hồ bơi rooftop</h4><p>View núi và thành phố Cát Bà</p></div>
-<div class="amenity-item fade-in"><div class="amenity-icon"><i class="fas fa-utensils"></i></div><h4>Nhà hàng</h4><p>Buffet sáng & món Á</p></div>
-<div class="amenity-item fade-in"><div class="amenity-icon"><i class="fas fa-wifi"></i></div><h4>Wi-Fi miễn phí</h4><p>Toàn khách sạn</p></div>
-<div class="amenity-item fade-in"><div class="amenity-icon"><i class="fas fa-people-roof"></i></div><h4>Phòng gia đình</h4><p>Rộng rãi, tiện nghi</p></div>
-<div class="amenity-item fade-in"><div class="amenity-icon"><i class="fas fa-snowflake"></i></div><h4>Tiện nghi phòng</h4><p>Điều hòa, TV, bàn làm việc</p></div>
-<div class="amenity-item fade-in"><div class="amenity-icon"><i class="fas fa-bell-concierge"></i></div><h4>Lễ tân 24/24</h4><p>Check-in muộn</p></div>
-<div class="amenity-item fade-in"><div class="amenity-icon"><i class="fas fa-ship"></i></div><h4>Đặt tour</h4><p>Vịnh Lan Hạ, đảo khỉ, kayak</p></div>
-<div class="amenity-item fade-in"><div class="amenity-icon"><i class="fas fa-elevator"></i></div><h4>Thang máy</h4><p>Hiện đại, tiện lợi</p></div>
-</div>
-</section>
-<hr class="golden-divider">
+    <hr class="golden-divider">
 
-<!-- PROFILE -->
-<section class="section profile-section" id="profile">
-<div class="profile-top">
-<div class="profile-img fade-left"><img src="image/Vì sao khách hàng tin tưởng.jpg" alt="Profile"></div>
-<div class="profile-text fade-right">
-<div class="section-badge">✦ Profile</div>
-<h2>Sand Hotel Cát Bà</h2>
-<p>Điểm đến nghỉ dưỡng lý tưởng bên bờ biển Cát Bà.</p>
-<ul class="profile-list">
-<li><i class="fas fa-map-marker-alt"></i>Vị trí đẹp, gần biển và thuận tiện du lịch</li>
-<li><i class="fas fa-star"></i>Phòng nghỉ hiện đại, sạch sẽ, sang trọng</li>
-<li><i class="fas fa-heart"></i>Nhân viên thân thiện, hỗ trợ tận tâm 24/7</li>
-<li><i class="fas fa-concierge-bell"></i>Dịch vụ đầy đủ: buffet, rooftop, tour tham quan…</li>
-<li><i class="fas fa-tags"></i>Giá cả hợp lý, trải nghiệm chất lượng</li>
-</ul>
-</div>
-</div>
-<div class="trust-section fade-in">
-<h3>Vì sao khách hàng luôn tin tưởng chúng tôi?</h3>
-<div class="trust-grid">
-<div class="trust-item"><i class="fas fa-award"></i><p>Được du khách đánh giá cao về chất lượng phòng nghỉ và dịch vụ</p></div>
-<div class="trust-item"><i class="fas fa-umbrella-beach"></i><p>Không gian hiện đại, gần biển, phù hợp nghỉ dưỡng và du lịch</p></div>
-<div class="trust-item"><i class="fas fa-comments"></i><p>Nhận nhiều phản hồi tích cực trên các nền tảng du lịch</p></div>
-<div class="trust-item"><i class="fas fa-chart-line"></i><p>Không ngừng nâng cấp tiện nghi và chất lượng dịch vụ</p></div>
-</div>
-</div>
-<div class="mission-section fade-in">
-<div class="mission-text">
-<h3>Sứ Mệnh Của Chúng Tôi</h3>
-<ul class="mission-list">
-<li><i class="fas fa-gem"></i>Mang đến không gian nghỉ dưỡng hiện đại và thoải mái</li>
-<li><i class="fas fa-compass"></i>Tạo trải nghiệm du lịch đáng nhớ cho du khách</li>
-<li><i class="fas fa-handshake"></i>Cung cấp dịch vụ chuyên nghiệp, tận tâm</li>
-<li><i class="fas fa-globe-asia"></i>Góp phần quảng bá vẻ đẹp biển đảo Cát Bà đến du khách trong và ngoài nước</li>
-</ul>
-</div>
-<div class="mission-img"><img src="image/Sứ mệnh.jpg" alt="Sứ mệnh"></div>
-</div>
-</section>
+    <!-- ĐÁNH GIÁ -->
+    <section class="section" id="danh-gia">
+        <div class="section-header fade-in">
+            <div class="section-badge">✦ Đánh Giá</div>
+            <h2>Khách hàng nói gì về chúng tôi</h2>
+            <p>Những phản hồi chân thực từ du khách đã trải nghiệm tại Sand Hotel Cát Bà.</p>
+            <div class="section-line"></div>
+        </div>
+        <div class="reviews-grid">
+            <div class="review-card fade-in">
+                <div class="review-stars">★★★★★</div>
+                <p class="review-text">"Khách sạn rất đẹp, phòng sạch sẽ và hiện đại. Nhân viên thân thiện, nhiệt tình.
+                    View núi từ phòng rất đẹp. Buffet sáng ngon và đa dạng. Sẽ quay lại lần sau!"</p>
+                <div class="review-author">
+                    <div class="review-avatar">T</div>
+                    <div>
+                        <div class="review-name">Trần Minh Tuấn</div>
+                        <div class="review-source"><i class="fab fa-google"></i> Google Maps</div>
+                    </div>
+                </div>
+            </div>
+            <div class="review-card fade-in">
+                <div class="review-stars">★★★★★</div>
+                <p class="review-text">"Vị trí tuyệt vời, gần biển và trung tâm. Phòng rộng rãi, sạch sẽ. Đặc biệt hồ
+                    bơi trên tầng thượng view cực đẹp. Giá cả rất hợp lý so với chất lượng."</p>
+                <div class="review-author">
+                    <div class="review-avatar">H</div>
+                    <div>
+                        <div class="review-name">Hoàng Thu Hà</div>
+                        <div class="review-source"><i class="fab fa-google"></i> Google Maps</div>
+                    </div>
+                </div>
+            </div>
+            <div class="review-card fade-in">
+                <div class="review-stars">★★★★★</div>
+                <p class="review-text">"Lần đầu đến Cát Bà và chọn Sand Hotel là quyết định đúng đắn. Phòng đẹp, tiện
+                    nghi đầy đủ, lễ tân hỗ trợ đặt tour rất nhiệt tình. Highly recommend!"</p>
+                <div class="review-author">
+                    <div class="review-avatar">L</div>
+                    <div>
+                        <div class="review-name">Lê Văn Đức</div>
+                        <div class="review-source"><i class="fab fa-google"></i> Google Maps</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr class="golden-divider">
 
-<!-- ĐẶT PHÒNG -->
-<section class="section booking-section" id="dat-phong">
-<div class="booking-content">
-<div class="section-header fade-in">
-<div class="section-badge" style="color:var(--gold-light)">✦ Đặt Phòng</div>
-<h2>Liên Hệ Đặt Phòng</h2>
-<p>Điền thông tin bên dưới, chúng tôi sẽ liên hệ xác nhận ngay!</p>
-<div class="section-line"></div>
-</div>
-<div class="booking-form fade-in" id="bookingForm">
-<form id="contactForm" onsubmit="submitForm(event)">
-<div class="form-row">
-<div class="form-group"><label>Họ và tên *</label><input type="text" name="name" placeholder="Nguyễn Văn A" required></div>
-<div class="form-group"><label>Số điện thoại *</label><input type="tel" name="phone" placeholder="0984 xxx xxx" required></div>
-</div>
-<div class="form-group"><label>Email</label><input type="email" name="email" placeholder="email@example.com"></div>
-<div class="form-group"><label>Ghi chú</label><textarea name="note" placeholder="Loại phòng, ngày check-in, số đêm..."></textarea></div>
-<button type="submit" class="btn-submit" id="submitBtn">✦ Đặt Phòng Ngay ✦</button>
-</form>
-</div>
-<div class="form-success" id="formSuccess">
-<i class="fas fa-check-circle"></i>
-<h3>Đặt phòng thành công!</h3>
-<p style="color:rgba(255,255,255,0.7)">Cảm ơn bạn! Chúng tôi sẽ liên hệ xác nhận sớm nhất.</p>
-</div>
-</div>
-</section>
+    <!-- TIỆN ÍCH -->
+    <section class="section amenities-section" id="tien-ich">
+        <div class="section-header fade-in">
+            <div class="section-badge" style="color:var(--gold-light)">✦ Tiện Ích</div>
+            <h2>Tiện nghi & Dịch vụ</h2>
+            <p>Đầy đủ tiện ích cao cấp phục vụ kỳ nghỉ của bạn.</p>
+            <div class="section-line"></div>
+        </div>
+        <div class="amenities-grid">
+            <div class="amenity-item fade-in">
+                <div class="amenity-icon"><i class="fas fa-swimming-pool"></i></div>
+                <h4>Hồ bơi rooftop</h4>
+                <p>View núi và thành phố Cát Bà</p>
+            </div>
+            <div class="amenity-item fade-in">
+                <div class="amenity-icon"><i class="fas fa-utensils"></i></div>
+                <h4>Nhà hàng</h4>
+                <p>Buffet sáng & món Á</p>
+            </div>
+            <div class="amenity-item fade-in">
+                <div class="amenity-icon"><i class="fas fa-wifi"></i></div>
+                <h4>Wi-Fi miễn phí</h4>
+                <p>Toàn khách sạn</p>
+            </div>
+            <div class="amenity-item fade-in">
+                <div class="amenity-icon"><i class="fas fa-people-roof"></i></div>
+                <h4>Phòng gia đình</h4>
+                <p>Rộng rãi, tiện nghi</p>
+            </div>
+            <div class="amenity-item fade-in">
+                <div class="amenity-icon"><i class="fas fa-snowflake"></i></div>
+                <h4>Tiện nghi phòng</h4>
+                <p>Điều hòa, TV, bàn làm việc</p>
+            </div>
+            <div class="amenity-item fade-in">
+                <div class="amenity-icon"><i class="fas fa-bell-concierge"></i></div>
+                <h4>Lễ tân 24/24</h4>
+                <p>Check-in muộn</p>
+            </div>
+            <div class="amenity-item fade-in">
+                <div class="amenity-icon"><i class="fas fa-ship"></i></div>
+                <h4>Đặt tour</h4>
+                <p>Vịnh Lan Hạ, đảo khỉ, kayak</p>
+            </div>
+            <div class="amenity-item fade-in">
+                <div class="amenity-icon"><i class="fas fa-elevator"></i></div>
+                <h4>Thang máy</h4>
+                <p>Hiện đại, tiện lợi</p>
+            </div>
+        </div>
+    </section>
+    <hr class="golden-divider">
 
-<!-- FOOTER -->
-<footer class="footer">
-<div class="footer-grid">
-<div class="footer-brand">
-<h3>Sand Hotel Cát Bà</h3>
-<p>Điểm đến nghỉ dưỡng lý tưởng bên bờ biển Cát Bà. Không gian hiện đại, dịch vụ tận tâm, mang đến trải nghiệm nghỉ dưỡng trọn vẹn.</p>
-</div>
-<div>
-<h4>Liên hệ</h4>
-<ul class="footer-info">
-<li><i class="fas fa-map-marker-alt"></i>90 Núi Ngọc, TT Cát Hải, Cát Bà, Hải Phòng</li>
-<li><i class="fas fa-phone"></i>0984.559.158 - 0984.242.728</li>
-<li><i class="fas fa-envelope"></i>sandhotel90.92@gmail.com</li>
-</ul>
-</div>
-<div>
-<h4>Thông tin</h4>
-<ul class="footer-info">
-<li><i class="fas fa-clock"></i>Hỗ trợ 24/7</li>
-<li><i class="fas fa-sign-in-alt"></i>Check-in: Từ 14h</li>
-<li><i class="fas fa-sign-out-alt"></i>Check-out: Trước 11h</li>
-</ul>
-</div>
-</div>
-<div class="footer-bottom">© 2026 Sand Hotel Cát Bà. All rights reserved.</div>
-</footer>
+    <!-- PROFILE -->
+    <section class="section profile-section" id="profile">
+        <div class="profile-top">
+            <div class="profile-img fade-left"><img src="image/Vì sao khách hàng tin tưởng.jpg" alt="Profile"></div>
+            <div class="profile-text fade-right">
+                <div class="section-badge">✦ Profile</div>
+                <h2>Sand Hotel Cát Bà</h2>
+                <p>Điểm đến nghỉ dưỡng lý tưởng bên bờ biển Cát Bà.</p>
+                <ul class="profile-list">
+                    <li><i class="fas fa-map-marker-alt"></i>Vị trí đẹp, gần biển và thuận tiện du lịch</li>
+                    <li><i class="fas fa-star"></i>Phòng nghỉ hiện đại, sạch sẽ, sang trọng</li>
+                    <li><i class="fas fa-heart"></i>Nhân viên thân thiện, hỗ trợ tận tâm 24/7</li>
+                    <li><i class="fas fa-concierge-bell"></i>Dịch vụ đầy đủ: buffet, rooftop, tour tham quan…</li>
+                    <li><i class="fas fa-tags"></i>Giá cả hợp lý, trải nghiệm chất lượng</li>
+                </ul>
+            </div>
+        </div>
+        <div class="trust-section fade-in">
+            <h3>Vì sao khách hàng luôn tin tưởng chúng tôi?</h3>
+            <div class="trust-grid">
+                <div class="trust-item"><i class="fas fa-award"></i>
+                    <p>Được du khách đánh giá cao về chất lượng phòng nghỉ và dịch vụ</p>
+                </div>
+                <div class="trust-item"><i class="fas fa-umbrella-beach"></i>
+                    <p>Không gian hiện đại, gần biển, phù hợp nghỉ dưỡng và du lịch</p>
+                </div>
+                <div class="trust-item"><i class="fas fa-comments"></i>
+                    <p>Nhận nhiều phản hồi tích cực trên các nền tảng du lịch</p>
+                </div>
+                <div class="trust-item"><i class="fas fa-chart-line"></i>
+                    <p>Không ngừng nâng cấp tiện nghi và chất lượng dịch vụ</p>
+                </div>
+            </div>
+        </div>
+        <div class="mission-section fade-in">
+            <div class="mission-text">
+                <h3>Sứ Mệnh Của Chúng Tôi</h3>
+                <ul class="mission-list">
+                    <li><i class="fas fa-gem"></i>Mang đến không gian nghỉ dưỡng hiện đại và thoải mái</li>
+                    <li><i class="fas fa-compass"></i>Tạo trải nghiệm du lịch đáng nhớ cho du khách</li>
+                    <li><i class="fas fa-handshake"></i>Cung cấp dịch vụ chuyên nghiệp, tận tâm</li>
+                    <li><i class="fas fa-globe-asia"></i>Góp phần quảng bá vẻ đẹp biển đảo Cát Bà đến du khách trong và
+                        ngoài nước</li>
+                </ul>
+            </div>
+            <div class="mission-img"><img src="image/Sứ mệnh.jpg" alt="Sứ mệnh"></div>
+        </div>
+    </section>
 
-<script>
-// === PARTICLES ===
-const canvas=document.getElementById('particles-canvas');
-const ctx=canvas.getContext('2d');
-let particles=[];
-function resizeCanvas(){canvas.width=canvas.parentElement.offsetWidth;canvas.height=canvas.parentElement.offsetHeight;}
-resizeCanvas();window.addEventListener('resize',resizeCanvas);
-class Particle{
-constructor(){this.reset();}
-reset(){this.x=Math.random()*canvas.width;this.y=Math.random()*canvas.height;
-this.size=Math.random()*3+1;this.speedY=Math.random()*-0.5-0.2;
-this.speedX=(Math.random()-0.5)*0.3;this.opacity=Math.random()*0.5+0.2;
-this.color=Math.random()>0.5?'rgba(212,175,55,':'rgba(240,208,96,';}
-draw(){ctx.beginPath();ctx.arc(this.x,this.y,this.size,0,Math.PI*2);
-ctx.fillStyle=this.color+this.opacity+')';ctx.fill();
-ctx.shadowBlur=this.size*4;ctx.shadowColor=this.color+'0.3)';}
-update(){this.y+=this.speedY;this.x+=this.speedX;
-this.opacity-=0.002;if(this.opacity<=0||this.y<0)this.reset();this.y=canvas.height;}}
-for(let i=0;i<60;i++)particles.push(new Particle());
-function animateParticles(){
-ctx.clearRect(0,0,canvas.width,canvas.height);
-particles.forEach(p=>{p.update();p.draw();});
-requestAnimationFrame(animateParticles);}
-animateParticles();
+    <!-- ĐẶT PHÒNG -->
+    <section class="section booking-section" id="dat-phong">
+        <div class="booking-content">
+            <div class="section-header fade-in">
+                <div class="section-badge" style="color:var(--gold-light)">✦ Đặt Phòng</div>
+                <h2>Liên Hệ Đặt Phòng</h2>
+                <p>Điền thông tin bên dưới, chúng tôi sẽ liên hệ xác nhận ngay!</p>
+                <div class="section-line"></div>
+            </div>
+            <div class="booking-form fade-in" id="bookingForm">
+                <form id="contactForm" onsubmit="submitForm(event)">
+                    <div class="form-row">
+                        <div class="form-group"><label>Họ và tên *</label><input type="text" name="name"
+                                placeholder="Nguyễn Văn A" required></div>
+                        <div class="form-group"><label>Số điện thoại *</label><input type="tel" name="phone"
+                                placeholder="0984 xxx xxx" required></div>
+                    </div>
+                    <div class="form-group"><label>Email</label><input type="email" name="email"
+                            placeholder="email@example.com"></div>
+                    <div class="form-group"><label>Ghi chú</label><textarea name="note"
+                            placeholder="Loại phòng, ngày check-in, số đêm..."></textarea></div>
+                    <button type="submit" class="btn-submit" id="submitBtn">✦ Đặt Phòng Ngay ✦</button>
+                </form>
+            </div>
+            <div class="form-success" id="formSuccess">
+                <i class="fas fa-check-circle"></i>
+                <h3>Đặt phòng thành công!</h3>
+                <p style="color:rgba(255,255,255,0.7)">Cảm ơn bạn! Chúng tôi sẽ liên hệ xác nhận sớm nhất.</p>
+            </div>
+        </div>
+    </section>
 
-// === NAVBAR ===
-window.addEventListener('scroll',()=>{
-document.getElementById('navbar').classList.toggle('scrolled',window.scrollY>50);
-});
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <h3>Sand Hotel Cát Bà</h3>
+                <p>Điểm đến nghỉ dưỡng lý tưởng bên bờ biển Cát Bà. Không gian hiện đại, dịch vụ tận tâm, mang đến trải
+                    nghiệm nghỉ dưỡng trọn vẹn.</p>
+            </div>
+            <div>
+                <h4>Liên hệ</h4>
+                <ul class="footer-info">
+                    <li><i class="fas fa-map-marker-alt"></i>90 Núi Ngọc, TT Cát Hải, Cát Bà, Hải Phòng</li>
+                    <li><i class="fas fa-phone"></i>0984.559.158 - 0984.242.728</li>
+                    <li><i class="fas fa-envelope"></i>sandhotel90.92@gmail.com</li>
+                </ul>
+            </div>
+            <div>
+                <h4>Thông tin</h4>
+                <ul class="footer-info">
+                    <li><i class="fas fa-clock"></i>Hỗ trợ 24/7</li>
+                    <li><i class="fas fa-sign-in-alt"></i>Check-in: Từ 14h</li>
+                    <li><i class="fas fa-sign-out-alt"></i>Check-out: Trước 11h</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">© 2026 Sand Hotel Cát Bà. All rights reserved.</div>
+    </footer>
 
-// === SCROLL ANIMATIONS (staggered) ===
-const obs=new IntersectionObserver((entries)=>{
-entries.forEach((e,i)=>{if(e.isIntersecting){
-setTimeout(()=>{e.target.classList.add('visible');},i*120);
-obs.unobserve(e.target);}});},{threshold:0.12});
-document.querySelectorAll('.fade-in,.fade-left,.fade-right,.scale-in').forEach(el=>obs.observe(el));
+    <script>
+        // === PARTICLES ===
+        const canvas = document.getElementById('particles-canvas');
+        const ctx = canvas.getContext('2d');
+        let particles = [];
+        function resizeCanvas() { canvas.width = canvas.parentElement.offsetWidth; canvas.height = canvas.parentElement.offsetHeight; }
+        resizeCanvas(); window.addEventListener('resize', resizeCanvas);
+        class Particle {
+            constructor() { this.reset(); }
+            reset() {
+                this.x = Math.random() * canvas.width; this.y = Math.random() * canvas.height;
+                this.size = Math.random() * 3 + 1; this.speedY = Math.random() * -0.5 - 0.2;
+                this.speedX = (Math.random() - 0.5) * 0.3; this.opacity = Math.random() * 0.5 + 0.2;
+                this.color = Math.random() > 0.5 ? 'rgba(212,175,55,' : 'rgba(240,208,96,';
+            }
+            draw() {
+                ctx.beginPath(); ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+                ctx.fillStyle = this.color + this.opacity + ')'; ctx.fill();
+                ctx.shadowBlur = this.size * 4; ctx.shadowColor = this.color + '0.3)';
+            }
+            update() {
+                this.y += this.speedY; this.x += this.speedX;
+                this.opacity -= 0.002; if (this.opacity <= 0 || this.y < 0) this.reset(); this.y = canvas.height;
+            }
+        }
+        for (let i = 0; i < 60; i++)particles.push(new Particle());
+        function animateParticles() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            particles.forEach(p => { p.update(); p.draw(); });
+            requestAnimationFrame(animateParticles);
+        }
+        animateParticles();
 
-// === SMOOTH SCROLL ===
-document.querySelectorAll('a[href^="#"]').forEach(a=>{
-a.addEventListener('click',e=>{e.preventDefault();
-const t=document.querySelector(a.getAttribute('href'));
-if(t)t.scrollIntoView({behavior:'smooth'});
-document.getElementById('navLinks').classList.remove('active');});});
+        // === NAVBAR ===
+        window.addEventListener('scroll', () => {
+            document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 50);
+        });
 
-// === PARALLAX on scroll ===
-window.addEventListener('scroll',()=>{
-const s=window.scrollY;
-const hero=document.querySelector('.hero-bg');
-if(hero)hero.style.transform='scale(1.05) translateY('+s*0.3+'px)';
-});
+        // === SCROLL ANIMATIONS (staggered) ===
+        const obs = new IntersectionObserver((entries) => {
+            entries.forEach((e, i) => {
+                if (e.isIntersecting) {
+                    setTimeout(() => { e.target.classList.add('visible'); }, i * 120);
+                    obs.unobserve(e.target);
+                }
+            });
+        }, { threshold: 0.12 });
+        document.querySelectorAll('.fade-in,.fade-left,.fade-right,.scale-in').forEach(el => obs.observe(el));
 
-// === COUNTER ANIMATION ===
-const counterObs=new IntersectionObserver((entries)=>{
-entries.forEach(e=>{if(e.isIntersecting){
-const el=e.target;const target=el.textContent;
-const num=parseFloat(target);if(isNaN(num))return;
-const suffix=target.replace(/[\d.]/g,'');
-const isFloat=target.includes('.');
-let current=0;const step=num/40;
-const timer=setInterval(()=>{
-current+=step;if(current>=num){current=num;clearInterval(timer);}
-el.textContent=(isFloat?current.toFixed(1):Math.floor(current))+suffix;
-},40);
-counterObs.unobserve(el);}});},{threshold:0.5});
-document.querySelectorAll('.stat-num').forEach(el=>counterObs.observe(el));
+        // === SMOOTH SCROLL ===
+        document.querySelectorAll('a[href^="#"]').forEach(a => {
+            a.addEventListener('click', e => {
+                e.preventDefault();
+                const t = document.querySelector(a.getAttribute('href'));
+                if (t) t.scrollIntoView({ behavior: 'smooth' });
+                document.getElementById('navLinks').classList.remove('active');
+            });
+        });
 
-// === TILT on cards ===
-document.querySelectorAll('.room-card,.info-card').forEach(card=>{
-card.addEventListener('mousemove',e=>{
-const r=card.getBoundingClientRect();
-const x=(e.clientX-r.left)/r.width-.5;
-const y=(e.clientY-r.top)/r.height-.5;
-card.style.transform='translateY(-12px) scale(1.02) perspective(800px) rotateY('+x*8+'deg) rotateX('+(-y*8)+'deg)';
-});
-card.addEventListener('mouseleave',()=>{card.style.transform='';});
-});
+        // === PARALLAX on scroll ===
+        window.addEventListener('scroll', () => {
+            const s = window.scrollY;
+            const hero = document.querySelector('.hero-bg');
+            if (hero) hero.style.transform = 'scale(1.05) translateY(' + s * 0.3 + 'px)';
+        });
 
-// === FORM ===
-function submitForm(e){
-e.preventDefault();
-const btn=document.getElementById('submitBtn');
-btn.textContent='Đang gửi...';btn.disabled=true;
-const fd=new FormData(e.target);
-const data=Object.fromEntries(fd);
-const SHEET_URL='https://script.google.com/macros/s/AKfycbyw1RIQsMJiBltDsxuk19UC8ns6qidITvS_Q-s-D-RdAOvln3iiDiBEIiUuwaOvlD-2Vg/exec';
-fetch(SHEET_URL,{method:'POST',mode:'no-cors',headers:{'Content-Type':'application/json'},body:JSON.stringify(data)})
-.then(()=>{
-document.getElementById('bookingForm').style.display='none';
-const s=document.getElementById('formSuccess');s.classList.add('show');s.style.display='block';
-}).catch(()=>{
-btn.textContent='✦ Đặt Phòng Ngay ✦';btn.disabled=false;
-document.getElementById('bookingForm').style.display='none';
-const s=document.getElementById('formSuccess');s.classList.add('show');s.style.display='block';
-});}
-</script>
+        // === COUNTER ANIMATION ===
+        const counterObs = new IntersectionObserver((entries) => {
+            entries.forEach(e => {
+                if (e.isIntersecting) {
+                    const el = e.target; const target = el.textContent;
+                    const num = parseFloat(target); if (isNaN(num)) return;
+                    const suffix = target.replace(/[\d.]/g, '');
+                    const isFloat = target.includes('.');
+                    let current = 0; const step = num / 40;
+                    const timer = setInterval(() => {
+                        current += step; if (current >= num) { current = num; clearInterval(timer); }
+                        el.textContent = (isFloat ? current.toFixed(1) : Math.floor(current)) + suffix;
+                    }, 40);
+                    counterObs.unobserve(el);
+                }
+            });
+        }, { threshold: 0.5 });
+        document.querySelectorAll('.stat-num').forEach(el => counterObs.observe(el));
+
+        // === ROOM MODAL ===
+        function openRoomModal(cardElem) {
+            const imgSrc = cardElem.querySelector('.room-card-img img').src;
+            const badgeHtml = cardElem.querySelector('.room-badge').outerHTML;
+            const title = cardElem.querySelector('h3').textContent;
+            const specsHtml = cardElem.querySelector('.room-specs').innerHTML;
+            const amenitiesHtml = cardElem.querySelector('.room-amenities').innerHTML;
+
+            document.getElementById('roomModalImg').src = imgSrc;
+            const badgeContainer = document.getElementById('roomModalBadgeContainer');
+            badgeContainer.innerHTML = badgeHtml;
+            // style the badge inside modal to reset absolute positioning
+            const badge = badgeContainer.querySelector('.room-badge');
+            if(badge) {
+                badge.style.position = 'relative';
+                badge.style.top = '0';
+                badge.style.left = '0';
+                badge.style.display = 'inline-block';
+            }
+
+            document.getElementById('roomModalTitle').textContent = title;
+            document.getElementById('roomModalSpecs').innerHTML = specsHtml;
+            document.getElementById('roomModalAmenities').innerHTML = amenitiesHtml;
+
+            const modal = document.getElementById('roomModal');
+            modal.style.display = 'flex';
+            // Trigger reflow
+            void modal.offsetWidth;
+            modal.classList.add('show');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeRoomModal() {
+            const modal = document.getElementById('roomModal');
+            modal.classList.remove('show');
+            setTimeout(() => {
+                modal.style.display = 'none';
+                document.body.style.overflow = '';
+            }, 400); // match transition duration
+        }
+
+        document.querySelectorAll('.room-card').forEach(card => {
+            const imgContainer = card.querySelector('.room-card-img');
+            imgContainer.addEventListener('click', () => openRoomModal(card));
+        });
+
+        // === TILT on cards ===
+        document.querySelectorAll('.room-card,.info-card').forEach(card => {
+            card.addEventListener('mousemove', e => {
+                const r = card.getBoundingClientRect();
+                const x = (e.clientX - r.left) / r.width - .5;
+                const y = (e.clientY - r.top) / r.height - .5;
+                card.style.transform = 'translateY(-12px) scale(1.02) perspective(800px) rotateY(' + x * 8 + 'deg) rotateX(' + (-y * 8) + 'deg)';
+            });
+            card.addEventListener('mouseleave', () => { card.style.transform = ''; });
+        });
+
+        // === FORM ===
+        function submitForm(e) {
+            e.preventDefault();
+            const btn = document.getElementById('submitBtn');
+            btn.textContent = 'Đang gửi...'; btn.disabled = true;
+            const fd = new FormData(e.target);
+            const data = Object.fromEntries(fd);
+            const SHEET_URL = 'https://script.google.com/macros/s/AKfycbyw1RIQsMJiBltDsxuk19UC8ns6qidITvS_Q-s-D-RdAOvln3iiDiBEIiUuwaOvlD-2Vg/exec';
+            fetch(SHEET_URL, { method: 'POST', mode: 'no-cors', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(data) })
+                .then(() => {
+                    document.getElementById('bookingForm').style.display = 'none';
+                    const s = document.getElementById('formSuccess'); s.classList.add('show'); s.style.display = 'block';
+                }).catch(() => {
+                    btn.textContent = '✦ Đặt Phòng Ngay ✦'; btn.disabled = false;
+                    document.getElementById('bookingForm').style.display = 'none';
+                    const s = document.getElementById('formSuccess'); s.classList.add('show'); s.style.display = 'block';
+                });
+        }
+    </script>
 </body>
+
 </html>
